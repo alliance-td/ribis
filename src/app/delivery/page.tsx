@@ -10,7 +10,6 @@ const deliveryImages = [
   "/images/pages/dostavka-2.webp",
   "/images/pages/dostavka-4.webp",
   "/images/pages/dostavka-5.webp",
-  "/images/pages/dostavka-6.webp",
 ];
 
 export default function DeliveryPage() {
