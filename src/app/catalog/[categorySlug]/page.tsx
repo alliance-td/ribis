@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return {};
   return {
     title: `${category.name} — Каталог`,
-    description: `Купить ${category.name} в компании РИБИС. Производство, продажа и переоборудование спецавтомобилей ГАЗ.`,
+    description: `Купить ${category.name} в MakeCars. Производство, продажа и переоборудование спецавтомобилей ГАЗ.`,
   };
 }
 

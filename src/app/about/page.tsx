@@ -4,8 +4,8 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import CertificateGallery from "@/components/CertificateGallery";
 
 export const metadata: Metadata = {
-  title: "О компании РИБИС",
-  description: "Компания РИБИС — производство, переоборудование и продажа спецавтомобилей ГАЗ.",
+  title: "О компании MakeCars",
+  description: "MakeCars — производство, переоборудование и продажа спецавтомобилей ГАЗ.",
 };
 
 const workImages = [
@@ -33,14 +33,14 @@ export default function AboutPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <AnimateOnScroll animation="fade-down">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">О компании РИБИС</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">О компании MakeCars</h1>
       </AnimateOnScroll>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         <AnimateOnScroll animation="fade-left">
           <div className="prose max-w-none">
             <p>
-              <strong>ООО «РИБИС»</strong> — компания, специализирующаяся на производстве, продаже
+              <strong>MakeCars</strong> — компания, специализирующаяся на производстве, продаже
               и переоборудовании спецавтомобилей на базе шасси ГАЗ. Мы работаем с 2009 года и за это время
               реализовали сотни проектов по переоборудованию коммерческого транспорта.
             </p>
@@ -65,13 +65,16 @@ export default function AboutPage() {
           </div>
         </AnimateOnScroll>
         <AnimateOnScroll animation="fade-right">
-          <Image
-            src="/images/pages/logo5.jpg"
-            alt="Компания РИБИС"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg w-full h-auto hover:shadow-2xl transition-shadow duration-300"
-          />
+          <div className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300" style={{ aspectRatio: "3/2" }}>
+            <Image
+              src="/images/pages/logo-makecars.png"
+              alt="MakeCars"
+              width={600}
+              height={400}
+              className="object-cover w-full h-full"
+              style={{ objectPosition: "center center" }}
+            />
+          </div>
         </AnimateOnScroll>
       </div>
 

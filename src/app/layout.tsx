@@ -11,15 +11,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "РИБИС — Спецавтомобили ГАЗ | Продажа и переоборудование",
-    template: "%s | РИБИС",
+    default: "MakeCars — Спецавтомобили ГАЗ | Продажа и переоборудование",
+    template: "%s | MakeCars",
   },
   description:
-    "Компания РИБИС — производство, продажа и переоборудование спецавтомобилей ГАЗ. ГАЗель, Газон, Садко, Соболь. Доставка по России.",
+    "MakeCars — производство, продажа и переоборудование спецавтомобилей ГАЗ. ГАЗель, Газон, Садко, Соболь. Доставка по России.",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome-192x192", url: "/android-chrome-192x192.png" },
+      { rel: "android-chrome-512x512", url: "/android-chrome-512x512.png" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    siteName: "РИБИС",
+    siteName: "MakeCars",
   },
 };
 

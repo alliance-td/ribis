@@ -30,14 +30,20 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
-          <Image
-            src="/images/pages/logo-78.jpg"
-            alt="РИБИС"
-            width={100}
-            height={100}
-            className="rounded group-hover:scale-110 transition-transform duration-300"
-          />
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300" style={{ width: 130, height: 70, flexShrink: 0 }}>
+            <Image
+              src="/images/pages/logo-makecars.png"
+              alt="MakeCars"
+              width={130}
+              height={70}
+              className="object-cover w-full h-full"
+              style={{ objectPosition: "center center" }}
+            />
+          </div>
+          <span className="text-xl font-bold hidden sm:block">
+            <span style={{ color: "#1a2f5a" }}>Make</span><span style={{ color: "#4a7fc1" }}>Cars</span>
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">

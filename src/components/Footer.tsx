@@ -27,14 +27,20 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image
-                src="/images/pages/logo-78.jpg"
-                alt="РИБИС"
-                width={100}
-                height={100}
-                className="rounded"
-              />
+            <Link href="/" className="flex items-center gap-2 mb-4">
+              <div className="rounded-lg overflow-hidden" style={{ width: 130, height: 70, flexShrink: 0 }}>
+                <Image
+                  src="/images/pages/logo-makecars.png"
+                  alt="MakeCars"
+                  width={130}
+                  height={70}
+                  className="object-cover w-full h-full"
+                  style={{ objectPosition: "center center" }}
+                />
+              </div>
+              <span className="text-xl font-bold">
+                <span className="text-white">Make</span><span style={{ color: "#7eb8f7" }}>Cars</span>
+              </span>
             </Link>
             <p className="text-sm text-gray-300 leading-relaxed max-w-[200px]">
               Производство, продажа и переоборудование спецавтомобилей ГАЗ.
@@ -69,7 +75,7 @@ export default function Footer() {
 
       <div className="border-t border-primary-light">
         <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} ООО РИБИС. Все права защищены.
+          &copy; {new Date().getFullYear()} MakeCars. Все права защищены.
         </div>
       </div>
     </footer>

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 
 const deliveryImages = [
   "/images/pages/dostavka-2.webp",
-  "/images/pages/dostavka-3.webp",
   "/images/pages/dostavka-4.webp",
   "/images/pages/dostavka-5.webp",
   "/images/pages/dostavka-6.webp",
@@ -23,7 +22,7 @@ export default function DeliveryPage() {
         <div className="prose max-w-none">
           <h2>Доставка автомобилей по России</h2>
           <p>
-            Компания РИБИС осуществляет доставку спецавтомобилей по всей территории Российской Федерации.
+            Компания MakeCars осуществляет доставку спецавтомобилей по всей территории Российской Федерации.
             Мы организуем перегон или доставку на автовозе до вашего города.
           </p>
 
@@ -56,7 +55,7 @@ export default function DeliveryPage() {
             <div key={img} className="rounded-lg overflow-hidden shadow-md">
               <Image
                 src={img}
-                alt="Доставка автомобилей РИБИС"
+                alt="Доставка автомобилей MakeCars"
                 width={600}
                 height={400}
                 className="w-full h-auto"

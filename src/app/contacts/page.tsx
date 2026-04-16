@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Контакты",
-  description: "Контакты компании РИБИС — адрес, телефоны, email, реквизиты. Форма обратной связи.",
+  description: "Контакты MakeCars. Форма обратной связи.",
 };
 
 export default function ContactsPage() {
