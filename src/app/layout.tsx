@@ -11,26 +11,21 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "MakeCars — Спецавтомобили ГАЗ | Продажа и переоборудование",
-    template: "%s | MakeCars",
+    default: "АЛЬЯНС — Спецавтомобили ГАЗ | Продажа и переоборудование",
+    template: "%s | АЛЬЯНС",
   },
   description:
-    "MakeCars — производство, продажа и переоборудование спецавтомобилей ГАЗ. ГАЗель, Газон, Садко, Соболь. Доставка по России.",
+    "АЛЬЯНС — производство, продажа и переоборудование спецавтомобилей ГАЗ. ГАЗель, Газон, Садко, Соболь. Доставка по России.",
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
-    other: [
-      { rel: "android-chrome-192x192", url: "/android-chrome-192x192.png" },
-      { rel: "android-chrome-512x512", url: "/android-chrome-512x512.png" },
-    ],
   },
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    siteName: "MakeCars",
+    siteName: "АЛЬЯНС",
   },
 };
 

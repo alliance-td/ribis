@@ -4,15 +4,15 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import CertificateGallery from "@/components/CertificateGallery";
 
 export const metadata: Metadata = {
-  title: "О компании MakeCars",
-  description: "MakeCars — производство, переоборудование и продажа спецавтомобилей ГАЗ.",
+  title: "О компании АЛЬЯНС",
+  description: "АЛЬЯНС — производство, переоборудование и продажа спецавтомобилей ГАЗ.",
 };
 
 const workImages = [
   { src: "/images/pages/gazel-nekst-na-metane-dlya-vodokanala.jpg", alt: "ГАЗель Некст на метане для водоканала" },
   { src: "/images/pages/gazel-nekst-na-metane-dlya-vodokanala-2.jpg", alt: "ГАЗель Некст для водоканала" },
   { src: "/images/pages/sobol-4h4-avarijnaya-gazovaya-sluzhba.jpg", alt: "Соболь 4х4 аварийная газовая служба" },
-  { src: "/images/pages/avtomasterskaya-gazon-next-c41r13-vid2.jpg", alt: "Автомастерская Газон Некст" },
+  { src: "/images/pages/avarijno-spasatelnyj-gaz-sobol-vid-1.jpg", alt: "Аварийно-спасательные ГАЗ Соболь" },
   { src: "/images/pages/gazel-nekst-ritualnyj-avtomobil-5.jpg", alt: "Ритуальный автомобиль ГАЗель" },
   { src: "/images/pages/gazon-nekst-evakuator-sdvizhnaya-platforma.jpg", alt: "Эвакуатор Газон Некст" },
   { src: "/images/pages/gaz-sobol-biznes-dorabotka.jpg", alt: "Доработка ГАЗ Соболь Бизнес" },
@@ -33,20 +33,20 @@ export default function AboutPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <AnimateOnScroll animation="fade-down">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">О компании MakeCars</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">О компании АЛЬЯНС</h1>
       </AnimateOnScroll>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         <AnimateOnScroll animation="fade-left">
           <div className="prose max-w-none">
             <p>
-              <strong>MakeCars</strong> — компания, специализирующаяся на производстве, продаже
-              и переоборудовании спецавтомобилей на базе шасси ГАЗ. Мы работаем с 2009 года и за это время
+              <strong>ООО &ldquo;Альянс&rdquo;</strong> — компания, специализирующаяся на производстве, продаже
+              и переоборудовании спецавтомобилей. Мы работаем с 2023 года и за это время
               реализовали сотни проектов по переоборудованию коммерческого транспорта.
             </p>
             <h2>Наши услуги</h2>
             <ul>
-              <li>Продажа спецавтомобилей ГАЗ (ГАЗель, Газон, Садко, Соболь)</li>
+              <li>Продажа спецавтомобилей</li>
               <li>Переоборудование автомобилей под ключ</li>
               <li>Установка газобаллонного оборудования (ГБО)</li>
               <li>Изготовление спецкузовов и надстроек</li>
@@ -67,8 +67,8 @@ export default function AboutPage() {
         <AnimateOnScroll animation="fade-right">
           <div className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300" style={{ aspectRatio: "3/2" }}>
             <Image
-              src="/images/pages/logo-makecars.png"
-              alt="MakeCars"
+              src="/images/pages/avtomasterskaya-gazon-next-c41r13-vid2.jpg"
+              alt="Передача автомобиля клиенту"
               width={600}
               height={400}
               className="object-cover w-full h-full"

@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Контакты",
-  description: "Контакты MakeCars. Форма обратной связи.",
+  description: "Контакты АЛЬЯНС. Форма обратной связи.",
 };
 
 export default function ContactsPage() {

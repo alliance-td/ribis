@@ -30,14 +30,9 @@ export default function CatalogClient({
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [selectedFuels, setSelectedFuels] = useState<string[]>([]);
   const [selectedWheels, setSelectedWheels] = useState<string[]>([]);
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 20000000]);
-  const [sortBy, setSortBy] = useState<string>("newest");
+
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const [filtersOpen, setFiltersOpen] = useState(false);
-
-  const maxPrice = useMemo(() => {
-    return Math.max(...initialProducts.map((p) => p.price_value || 0), 20000000);
-  }, [initialProducts]);
 
   const filtered = useMemo(() => {
     let result = initialProducts;
@@ -70,23 +65,8 @@ export default function CatalogClient({
       });
     }
 
-    result = result.filter(
-      (p) => p.price_value >= priceRange[0] && p.price_value <= priceRange[1]
-    );
-
-    switch (sortBy) {
-      case "price-asc":
-        result = [...result].sort((a, b) => a.price_value - b.price_value);
-        break;
-      case "price-desc":
-        result = [...result].sort((a, b) => b.price_value - a.price_value);
-        break;
-      default:
-        break;
-    }
-
     return result;
-  }, [initialProducts, selectedCategories, selectedTags, selectedFuels, selectedWheels, priceRange, sortBy]);
+  }, [initialProducts, selectedCategories, selectedTags, selectedFuels, selectedWheels]);
 
   const toggleFilter = (
     value: string,
@@ -136,29 +116,6 @@ export default function CatalogClient({
               {TAG_NAMES[tag] || tag}
             </label>
           ))}
-        </div>
-      </div>
-
-      {/* Price */}
-      <div>
-        <h3 className="font-bold text-sm mb-3">Цена</h3>
-        <div className="space-y-2">
-          <input
-            type="range"
-            min={0}
-            max={maxPrice}
-            step={100000}
-            value={priceRange[1]}
-            onChange={(e) => {
-              setPriceRange([priceRange[0], Number(e.target.value)]);
-              setVisibleCount(ITEMS_PER_PAGE);
-            }}
-            className="w-full"
-          />
-          <div className="flex justify-between text-xs text-gray-500">
-            <span>{priceRange[0].toLocaleString("ru-RU")} ₽</span>
-            <span>{priceRange[1].toLocaleString("ru-RU")} ₽</span>
-          </div>
         </div>
       </div>
 
@@ -230,15 +187,6 @@ export default function CatalogClient({
           <p className="text-sm text-gray-500">
             Найдено: {filtered.length} авто
           </p>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="border rounded-lg px-3 py-1.5 text-sm"
-          >
-            <option value="newest">По новизне</option>
-            <option value="price-asc">Цена: по возрастанию</option>
-            <option value="price-desc">Цена: по убыванию</option>
-          </select>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">

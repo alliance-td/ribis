@@ -4,7 +4,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Наши работы",
-  description: "Портфолио выполненных работ MakeCars — переоборудование спецавтомобилей ГАЗ.",
+  description: "Портфолио выполненных работ АЛЬЯНС — переоборудование спецавтомобилей ГАЗ.",
 };
 
 const works = [

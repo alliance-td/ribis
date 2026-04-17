@@ -31,18 +31,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300" style={{ width: 130, height: 70, flexShrink: 0 }}>
-            <Image
-              src="/images/pages/logo-makecars.png"
-              alt="MakeCars"
-              width={130}
-              height={70}
-              className="object-cover w-full h-full"
-              style={{ objectPosition: "center center" }}
-            />
-          </div>
-          <span className="text-xl font-bold hidden sm:block">
-            <span style={{ color: "#1a2f5a" }}>Make</span><span style={{ color: "#4a7fc1" }}>Cars</span>
+          <Image
+            src="/images/pages/logo-aliance.png"
+            alt="АЛЬЯНС"
+            width={56}
+            height={56}
+            className="group-hover:scale-110 transition-transform duration-300"
+          />
+          <span className="text-3xl font-black hidden sm:block tracking-normal uppercase" style={{ color: "#4a90c4" }}>
+            АЛЬЯНС
           </span>
         </Link>
 
