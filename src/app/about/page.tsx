@@ -36,7 +36,7 @@ export default function AboutPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-8">О компании АЛЬЯНС</h1>
       </AnimateOnScroll>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div className="mb-12">
         <AnimateOnScroll animation="fade-left">
           <div className="prose max-w-none">
             <p>
@@ -62,18 +62,6 @@ export default function AboutPage() {
               <li>Гарантия на выполненные работы</li>
               <li>Индивидуальный подход к каждому клиенту</li>
             </ul>
-          </div>
-        </AnimateOnScroll>
-        <AnimateOnScroll animation="fade-right">
-          <div className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300" style={{ aspectRatio: "3/2" }}>
-            <Image
-              src="/images/pages/avtomasterskaya-gazon-next-c41r13-vid2.jpg"
-              alt="Передача автомобиля клиенту"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full"
-              style={{ objectPosition: "center center" }}
-            />
           </div>
         </AnimateOnScroll>
       </div>
