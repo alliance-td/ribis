@@ -5,6 +5,7 @@
       "name": "Next.js Dev Server",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/mac/Desktop/ribis-site",
       "port": 3000
     }
   ]
