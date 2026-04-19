@@ -14,8 +14,7 @@ const works = [
   { src: "/images/pages/sobol-4h4-avarijnaya-gazovaya-sluzhba-1.jpg", title: "Соболь 4х4 аварийная газовая служба", category: "Спецтехника" },
   { src: "/images/pages/sobol-4h4-avarijnaya-gazovaya-sluzhba.jpg", title: "Аварийная газовая служба Соболь", category: "Спецтехника" },
   { src: "/images/pages/avarijnaya-gazovaya-sluzhba-portfolio.jpg", title: "Аварийная газовая служба", category: "Спецтехника" },
-  { src: "/images/pages/avtomasterskaya-gazon-next-c41r13-vid2.jpg", title: "Автомастерская Газон Некст C41R13", category: "Мастерские" },
-  { src: "/images/pages/avtomasterskaya-a32r32-vid2.jpg", title: "Автомастерская A32R32", category: "Мастерские" },
+
   { src: "/images/pages/automasterskaya-gazel-nekst.jpg", title: "Автомастерская ГАЗель Некст", category: "Мастерские" },
   { src: "/images/pages/gazel-nekst-ritualnyj-avtomobil-5.jpg", title: "Ритуальный автомобиль ГАЗель Некст", category: "Ритуальные" },
   { src: "/images/pages/gazel-nekst-ritualnyj-avtomobil-6.jpg", title: "Ритуальный автомобиль — вид 2", category: "Ритуальные" },
