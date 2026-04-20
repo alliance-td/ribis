@@ -40,15 +40,6 @@ export default async function ProductPage({ params }: Props) {
   const category = getCategoryBySlug(categorySlug);
   const related = getRelatedProducts(product);
 
-  const hasDiscount = product.old_price && product.old_price !== "";
-  let discountPercent = 0;
-  if (hasDiscount && product.price_value) {
-    const oldVal = parseInt(product.old_price.replace(/\D/g, ""));
-    if (oldVal > product.price_value) {
-      discountPercent = Math.round(((oldVal - product.price_value) / oldVal) * 100);
-    }
-  }
-
   const attributes = Object.entries(product.attributes || {});
 
   return (
@@ -74,26 +65,8 @@ export default async function ProductPage({ params }: Props) {
             {product.title}
           </h1>
 
-          <div className="flex items-baseline gap-3 mb-4">
-            <span className="text-3xl font-bold text-primary">{product.price}</span>
-            {hasDiscount && (
-              <>
-                <span className="text-lg text-gray-400 line-through">{product.old_price}</span>
-                {discountPercent > 0 && (
-                  <span className="bg-red-600 text-white text-sm font-bold px-2 py-0.5 rounded">
-                    -{discountPercent}%
-                  </span>
-                )}
-              </>
-            )}
-          </div>
-
           <div className="mb-4">
-            {product.in_stock ? (
-              <span className="text-green-600 font-medium">В наличии</span>
-            ) : (
-              <span className="text-orange-500 font-medium">Под заказ</span>
-            )}
+            <span className="text-orange-500 font-medium">Под заказ</span>
           </div>
 
           {product.short_description && (

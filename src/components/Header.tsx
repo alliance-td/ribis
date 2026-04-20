@@ -37,6 +37,7 @@ export default function Header() {
             width={56}
             height={56}
             className="group-hover:scale-110 transition-transform duration-300"
+              priority
           />
           <span className="text-3xl font-black hidden sm:block tracking-normal uppercase" style={{ color: "#4a90c4" }}>
             АЛЬЯНС

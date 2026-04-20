@@ -63,15 +63,6 @@
     "html_file": "pages/category_gaz-valdaj.html"
   },
   {
-    "slug": "autolab",
-    "name": "Автолаборатории",
-    "url": "https://autoribis.ru/product-category/autolab/",
-    "image": "",
-    "description": "",
-    "count_text": "Показаны все (3)Сортировка: самые недавние",
-    "html_file": "pages/category_autolab.html"
-  },
-  {
     "slug": "avtofurgony",
     "name": "Автофургоны",
     "url": "https://autoribis.ru/product-category/avtofurgony/",
